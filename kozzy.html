@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kozzy Wellness</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="kozzy.js"></script>
+		<style>
+			#response {
+				margin-top: 20px;
+				padding: 10px;
+				min-height: 50px;
+			}
+			#response h3 {
+				color: #333;
+				font-size: 1.2em;
+			}
+			#response strong {
+				color: #d9534f;
+			}
+			#response ul {
+				padding-left: 20px;
+			}
+			#response li {
+				margin-bottom: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Free ChatBot</h2>
+			<div class="form-group">
+				<input
+					type="text"
+					class="form-control"
+					id="userInput"
+					placeholder="Enter your question" />
+			</div>
+			<button class="btn btn-success" onclick="sendMessage()">Ask!</button>
+			<div id="response"></div>
+		</div>
+    </body>
+</html>
